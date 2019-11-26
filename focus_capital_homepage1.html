@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Focus Capital Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url("https://use.typekit.net/huh5sri.css");
+        /*   
+        @media screen and (min-width: 768px)
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-top: 226px;
+    margin-left: 85px;
+        }*/
+
+        /* @media screen and (min-width: 768px)*/
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-next,
+        .carousel-control .icon-prev {
+            width: 211px;
+            height: 30px;
+
+            font-size: 30px;
+        }
+
+        .carousel-caption {
+            right: 20%;
+            left: 20%;
+            padding-bottom: 80px;
+        }
+
+        .carousel-inner {
+            /* position: relative; */
+            width: 99%;
+            overflow: hidden;
+        }
+
+        .form-control {
+            background-color: black;
+            border-bottom-color: #FCB043;
+        }
+   
+.nav-center {  
+  text-align: center;
+    }
+  ul.nav {
+    display: inline-block;
+       }
+    li {
+      display: inline
+      a {
+        float: left
+      }
+    }
+ 
+.textarea-container {
+  position: relative;
+}
+.textarea-container textarea {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.textarea-container button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+        
+       
+/*a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+}        
+   */     
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.5;}
+.tab .nav-tabs{
+    padding-left: 15px;
+       margin-top: -20px;
+
+}
+.tab .nav-tabs li a{
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 28px;
+    background: #fcb043;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    transition: all 0.3s ease 0s;
+   
+}
+        .tab .nav-tabs li a,
+.tab .nav-tabs li.active a:hover,
+.tab .nav-tabs li.active a:focus{
+    color: #fff;
+    background: #fcb043;
+    border: none;
+    border-radius: 0;
+     width:200px; 
+    
+}
+          .tab .nav-tabs li a:before{
+    border-right: 15px solid #fcb043;
+    left: -15px; 
+       top:0px;     
+}
+  .tab .nav-tabs li a:after{
+    border-left: 15px solid #fcb043;
+    right: -15px;
+       top:0px;
+}
+      
+        
+/*.tab .nav-tabs li a:hover{
+    background: #fcb043;
+}*/
+
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:hover,
+.tab .nav-tabs li.active a:focus{
+    color: #fff;
+    background: #fcb043;
+    border: none;
+    border-radius: 0;
+     width:200px; 
+}
+        .tab .nav-tabs li.wholesale a,
+.tab .nav-tabs li.wholesale a:hover,
+.tab .nav-tabs li.wholesale a:focus{
+    color: #fff;
+    background: #fcb043;
+    border: none;
+    border-radius: 0;
+     width:200px;
+
+}
+        .tab .nav-tabs li.private_lending a,
+.tab .nav-tabs li.private_lending a:hover,
+.tab .nav-tabs li.private_lending a:focus{
+    color: #fff;
+    background: #fcb043;
+    border: none;
+    border-radius: 0;
+     width:200px; 
+}
+.tab .nav-tabs li a:before,
+.tab .nav-tabs li a:after{
+    content: "";
+    border-bottom: 42px solid transparent;
+    position: absolute;
+    top: -2px;
+}
+        .tab .nav-tabs li.active a:before{
+    border-right: 15px solid #fcb043;
+    left: -15px;
+       top:0px;
+             
+}
+        
+.tab .nav-tabs li.active a:after{
+    border-left: 15px solid #fcb043;
+    right: -15px;
+ top:0px;
+   
+}
+   
+.tab .nav-tabs li.wholesale a:before{
+    border-right: 15px solid black;
+    left: -15px;
+    top:0px;
+ 
+    
+}
+        
+.tab .nav-tabs li.wholesale a:after{
+    border-left: 15px solid black;
+    right: -15px;
+    top:0px;
+    
+}
+        .tab .nav-tabs li.private_lending a:before{
+    border-right: 15px solid gray;
+    left: -15px;
+            top:0px;
+             
+}
+        
+.tab .nav-tabs li.private_lending a:after{
+    border-left: 15px solid gray;
+    right: -15px;
+    top:0px;
+     
+}
+        
+
+/*.tab .nav-tabs li a span{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: -9px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}*/
+.tab .nav-tabs li a:hover span,
+.tab .nav-tabs li.active a span{
+    letter-spacing: 1px;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+.tab .tab-content{
+    padding: 30px;
+    background: #fff;
+    font-size: 16px;
+    color: #6c6c6c;
+    line-height: 25px;
+}
+.tab .tab-content h3{
+    font-size: 24px;
+    margin-top: 0;
+}
+@media only screen and (max-width: 479px){
+    .tab .nav-tabs li{
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .tab .nav-tabs li a span{
+        letter-spacing: 1px;
+        opacity: 1;
+    }
+}
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color:#B2B2B2;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5" style="margin-top:3px;">
+                    <p><b>Over 50 years of experience in mortgage lending.</b></p>
+                </div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2" style="margin-top:5px;">
+                    <i class="fa fa-facebook" style="font-size:20px;"></i>
+                    <i class="fa fa-twitter" style="font-size:20px;"></i>
+                    <i class="fa fa-instagram" style="font-size:20px;"></i>
+                    <i class="fa fa-yelp" style="font-size:20px;"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--top header container-->
+
+    <div class="container-fluid" style="margin-top:5px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                    <img src="home-page-assets/logo-header.png" alt="logo-header" height="60px">
+                </div>
+                <div class="col-sm-2"><br />
+                    <i class="fas fa-map-marker-alt" style="font-size:15px;color:#FCB043;"></i>
+                    600 La Terraza Blvd. <br />&nbsp;&nbsp;&nbsp;&nbsp;escondido CA, 92025
+                </div><br />
+                <div class="col-sm-3">
+                    <i class="fas fa-phone" style="font-size:15px;color:#FCB043;"></i>
+                    858.525.5955<br />
+                    <i class="fa fa-envelope" style="font-size:15px;color:#FCB043;"></i>
+                    info@focuscapitalgroups.com
+                </div>
+                <div class="col-sm-1">
+                    <button type="button" class="btn btn" style="background-color:#FCB043"><b>GET APPROVED</b></button>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <!--logo header-->
+
+
+
+
+
+    <nav class="navbar navbar-inverse" style="margin-top:5px;margin-bottom:0px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">PRODUCTS 1-1</a></li>
+                                    <li><a href="#">PRODUCTS 1-2</a></li>
+                                    <li><a href="#">PRODUCTS 1-3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESOURCES
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">RESOURCES 1-1</a></li>
+                                    <li><a href="#">RESOURCES 1-2</a></li>
+                                    <li><a href="#">RESOURCES 1-3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--navbar-->
+
+
+    <div class="container-fluid" style="background-image:url('home-page-assets/hero-bg.jpg');">
+        <div class="row" style="background-image:url('home-page-assets/hero-overlay2.png');"><br /><br /><br />
+            <div class="col-sm-12">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <img src="home-page-assets/hero-image1.png" alt="hero-image" ><br /><br /><br /><br />
+                </div>
+                <div class="col-sm-6"><br /><br />
+                    <h2 style=" font-family: mrs-eaves-xl-serif, serif;"><i>The future of</i><br />
+                        <b>Mortgage Lending Industry</b></h2>
+                    <hr class="new1" style="border-top: 2px solid #FCB043; width: 70px;margin-right:650px;">
+                    <h5>We provide the <b>highest level of service</b> with a <br />personalized platform to each and every client utilizing <br />the latest and highest <b>cutting edge technology</b>to <br />streamline the lending process in all facest.</h5><br />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-8">
+
+                                <button type="button" class="btn btn" style="background-color:rgba(100, 100, 100, 0.1);border:1px solid black;"><b>LEARN MORE</b>
+                                </button>
+                                <button type="button" class="btn btn" style="background-color:#FCB043"><b>GET APPROVED</b></button>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--hero container-->
+
+
+    <br />
+    <center>
+        <h2 class="serif" style="font-family: mrs-eaves-xl-serif, serif;font-weight: 700;font-style: normal;">Specializing in California Home Loans</h2>
+    </center>
+    <hr class="new1" style="border-top: 2px solid #FCB043; width: 70px">
+    <br>
+    <center><b>FCFC was structured to bring few disruptive and game changing products</b><br>
+        <b>in mortgage lending industry.</b></center>
+
+    <div class="container-fluid">
+        <div class="panel-body">
+            <center>
+                <div class="col-sm-4">
+                    <img src="icons/icon-check.png" class="img-thumbnail" alt="Icon Check" width="110" height="100">
+                    <br>
+                    <i style="font-size: 25px;font-family: mrs-eaves-xl-serif, serif;font-weight: 400;font-style: italic,bold;font-weight: 400;"><b>Affordable</b></i>
+                    <br>
+                    <br>
+                    <p>lorem ipsum dolor sit ament, consectetur</p>
+                    <p>adipiscing elit. sed do eiusmod tempor</p>
+                    <p>incididunt ut labore et dolore magna aliqua. Ut</p>
+                    <p>enim ad mimim veniam, quis nostrud</p>
+                    <p>exercitation ullamco laborisoccaecat.</p>
+                </div>
+            </center>
+            <center>
+                <div class="col-sm-4">
+                    <img src="icons/icon-time.png" class="img-thumbnail" alt="Icon Time" width="100" height="100">
+                    <br>
+                    <i style="font-size: 25px;font-family: mrs-eaves-xl-serif, serif;font-weight: 400;font-style: italic,bold;font-weight:700;"><b>fast</b></i>
+                    <br>
+                    <br>
+                    <p>Ut enim ad minim veniam, quis nostrud</p>
+                    <p>exercitation ullamco laboris nisi ut aliquip ex nostrud</p>
+                    <p>commodo consequat. Duis aute irure dolor in </p>
+                    <p>resperhenderit in voluptate velit esse cillum</p>
+                    <p>dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </center>
+            <center>
+                <div class="col-sm-4">
+                    <img src="icons/icon-hand.png" class="img-thumbnail" alt="Icon Hand" width="75" height="120">
+                    <br>
+                    <b style="font-size: 25px;font-family: mrs-eaves-xl-serif, serif;font-weight: 400;font-style: italic,bold;font-weight:700;"><i>Easy</i></b>
+                    <br>
+                    <br>
+                    <p>Duis aute irure dolore in reperhenderit in</p>
+                    <p>voluptate velit esse cillum dolore eu fugiat nulla</p>
+                    <p>pariatur. Execepteur sint occaecat cupidatat non</p>
+                    <p>proident, sunt in culpa qui offcia deserunt mollit</p>
+                    <p>anim id est laborum.</p>
+                </div>
+            </center>
+        </div>
+    </div>
+    <!--secound section -->
+    <br />
+
+     <div class="container" style="border-top:5px solid #fcb043;margin-top:10px;"><br/>
+        <div class="row">
+           <div class="col-sm-1"></div>
+            <div class="col-md-10" >
+               
+                <div class="tab" role="tabpanel" >
+                    <!-- Nav tabs -->
+                   <!--  <hr class="new1" style="border-top: solid #FCB043;">-->
+                    <div class="nav-center">
+                  
+                    <ul class="nav nav-tabs" role="tablist">
+                         
+                        <li role="presentation" class="active" ><a href="#retail" aria-controls="home" role="tab" data-toggle="tab" style="margin-top:-5px;"><span>RETAIL</span></a></li>
+                        <li role="presentation" class="wholesale"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab" style="background-color:black;    margin-top: -5px;"><span>WHOLESALE</span></a></li>
+                        <li role="presentation" class="private_lending"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab" style="background-color:gray;margin-top: -5px;"><span>PRIVATE LENDING</span></a></li>
+                    </ul>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content tabs">
+                       <div id="retail" class="tab-pane fade in active" >
+    <div class="row">
+        <div class="col-sm-12" style="background-color: aliceblue;">
+            <div class="col-sm-6">
+                 <h2 style="font-family:mrs-eaves-xl-serif,serif;color:black;"><b>Retail Solutions</b></h2>
+     <hr class="new1" style="border-top: 2px solid #FCB043; width: 70px;margin-right:650px;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p><br/><br/>
+           <center><button type="button" class="btn btn" style="background-color:rgba(100, 100, 100, 0.1);border:1px solid black;"><b>LEARN MORE</b>
+                                </button>
+                                <button type="button" class="btn btn" style="background-color:#FCB043"><b>GET APPROVED</b></button></center>
+            </div><br/>
+            <div class="col-sm-6">
+                <img src="images/girl.jpg" alt="girl" width="450" height="300" class="img-thumbnail" >
+            </div>
+        </div>
+    </div>
+    </div>
+                        <div role="tabpanel" class="tab-pane fade" id="Section2">
+                            <h3>Section 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="Section3">
+                            <h3>Section 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <!--container close-->
+
+<br/>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/hand.jpg" alt="hand">
+                        <div class="carousel-caption">
+                            <img src="home-page-assets/stars.png" alt="stars">
+                            <h1 style=" font-family: mrs-eaves-xl-serif, serif;"><i>"Great people, easy to work with, and they help you <br /> choose the
+                                    best option for you and your family."</i></h1>
+                            <h5>-HAPPY CUSTOMER </h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/hand.jpg" alt="hand">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/hand.jpg" alt="hand">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+
+                </a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--4th container-->
+
+    <div class="container-fluid" style="background-color:#FCB043">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-8">
+                    <h2 style="font-family:mrs-eaves-xl-serif,serif;color:black;"><b>Mortgage Lending Solutions Made Easy</b></h2>
+                    <h4 style="color:white;">Hassle-free experience with your mortgage. Let us guide you through the process.</h4>
+                </div>
+                <div class="col-sm-2"><br /><br />
+                    <button type="button" class="btn btn" style="background-color:black;color:white;">START NOW</button><br /><br />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div><br />
+    </div>
+    <!--5th container-->
+
+    <div class="container-fluid" style="background-color:black;">
+        <div class="row"><br />
+            <div class="col-sm-12">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <img src="home-page-assets/footer-logo.png"><br /><br />
+                    <p style="color:#666666;">We provide the hightst level of service with a
+                        personalized platform to each and every client
+                        utilizing the latest and highest cutting edge
+                        technology to streamline the lending process
+                        in all facets.</p>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <h2 style="font-family:mrs-eaves-xl-serif,serif;color:white;">Contact Us</h2><br />
+                    <i class="fas fa-phone" style="font-size:15px;color:#FCB043;"></i>
+                  <b style="color:#666666">858.525.595</b><br />
+                    <i class="fa fa-envelope" style="font-size:15px;color:#FCB043;"></i>
+                    <b style="color:#666666"> info@focuscapitalgroups.com</b><br /><br />
+                    <i class="fas fa-map-marker-alt" style="font-size:15px;color:#FCB043;"></i>
+                    <b style="color:#666666">600 La Terraza Blvd.</b> <br />&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:#666666">escondido CA, 92025</b>
+                    <br /><br />
+                    <i class="fas fa-clock" style="font-size:15px;color:#FCB043;"></i>
+                    <b style="color:#666666"> Mon-Fri: 8am-5pm PST</b>
+                </div>
+                <div class="col-sm-3">
+                    <h2 style="font-family:mrs-eaves-xl-serif,serif;color:white;">Questions? Ask Now!</h2>
+                    <input type="text" class="form-control" name="your_name" placeholder="Your Name"><br />
+                    <input type="email" class="form-control" name="your_mail" placeholder="Your Mail"><br />
+                    <input type="phone" class="form-control" name="your_phone" placeholder="Your Phone"><br />
+                  <!-- <div class="input-group">
+    <textarea class="form-control custom-control" rows="3" style="resize:none"></textarea>     
+    <span class="input-group-addon btn btn-primary" style="background-color:#fcb043;color:white;">SUBMIT</span>
+</div>-->
+               <div class="textarea-container" >
+  <textarea name="foo" style="background-color:black;" class="form-control">Message</textarea>
+  <button class="btn-xs" style="color:black;background-color:#fcb043;margin-top:31px;border:1px solid #fcb043;"><b>Submit</b></button>
+</div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+        <hr style="width:1100px;">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-9">
+                <p style="margin-top:-14px;
+    margin-left:-10px;">Copyright @ 2019 Focus Capital. All rights reserved</p><br />
+                </div>
+                <div class="col-sm-1">
+                    <i class="fa fa-facebook" style="font-size:20px;"></i>
+                    <i class="fa fa-twitter" style="font-size:20px;"></i>
+                    <i class="fa fa-instagram" style="font-size:20px;"></i>
+                    <i class="fa fa-yelp" style="font-size:20px;"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--6th container-->
+</body>
+
+</html>
